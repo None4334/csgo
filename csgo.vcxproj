@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\classes\autobaseptr.cpp" />
+    <ClCompile Include="dependencies\classes\clipraytrace.cpp" />
+    <ClCompile Include="dependencies\classes\crc32.cpp" />
+    <ClCompile Include="dependencies\classes\inputsys.cpp" />
+    <ClCompile Include="dependencies\classes\keyvalues.cpp" />
+    <ClCompile Include="dependencies\curl\hwid\hwid.cpp" />
+    <ClCompile Include="dependencies\curl\hwid\md5.cpp" />
+    <ClCompile Include="dependencies\imgui\backends\imgui_impl_dx9.cpp" />
+    <ClCompile Include="dependencies\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="dependencies\mh\buffer.c" />
+    <ClCompile Include="dependencies\mh\hde\hde32.c" />
+    <ClCompile Include="dependencies\mh\hde\hde64.c" />
+    <ClCompile Include="dependencies\mh\hook.c" />
+    <ClCompile Include="dependencies\mh\trampoline.c" />
+    <ClCompile Include="main\csgo.cpp" />
+    <ClCompile Include="main\dll.cpp" />
+    <ClCompile Include="main\features\antiaim.cpp" />
+    <ClCompile Include="main\features\autowall.cpp" />
+    <ClCompile Include="main\features\chams.cpp" />
+    <ClCompile Include="main\features\misc.cpp" />
+    <ClCompile Include="main\features\nadepred.cpp" />
+    <ClCompile Include="main\features\nadewarning.cpp" />
+    <ClCompile Include="main\features\prediction.cpp" />
+    <ClCompile Include="main\features\ragebot.cpp" />
+    <ClCompile Include="main\features\skins\skinparser.cpp" />
+    <ClCompile Include="main\features\skins\skins.cpp" />
+    <ClCompile Include="main\features\tracesystem.cpp" />
+    <ClCompile Include="main\features\visuals.cpp" />
+    <ClCompile Include="main\handlers\animationsmanager.cpp" />
+    <ClCompile Include="main\handlers\cmdmgr.cpp" />
+    <ClCompile Include="main\handlers\convarmanager.cpp" />
+    <ClCompile Include="main\handlers\entityhandler.cpp" />
+    <ClCompile Include="main\handlers\eventlogger.cpp" />
+    <ClCompile Include="main\handlers\eventmanager.cpp" />
+    <ClCompile Include="main\handlers\firebulletmanager.cpp" />
+    <ClCompile Include="main\handlers\localanimmanager.cpp" />
+    <ClCompile Include="main\handlers\localengine.cpp" />
+    <ClCompile Include="main\handlers\netvarmanager.cpp" />
+    <ClCompile Include="main\handlers\packethandler.cpp" />
+    <ClCompile Include="main\hooks.cpp" />
+    <ClCompile Include="main\interface.cpp" />
+    <ClCompile Include="main\math.cpp" />
+    <ClCompile Include="main\renderer.cpp" />
+    <ClCompile Include="main\sdk\animation.cpp" />
+    <ClCompile Include="main\sdk\baseentity.cpp" />
+    <ClCompile Include="main\sdk\bonesetuprebuilt.cpp" />
+    <ClCompile Include="main\sdk\cbonesetup.cpp" />
+    <ClCompile Include="main\sdk\ikcontext.cpp" />
+    <ClCompile Include="main\ui\ui.cpp" />
+    <ClCompile Include="main\ui\vars.cpp" />
+    <ClCompile Include="others\util.cpp" />
+    <ClCompile Include="others\wapi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\classes\address.h" />
+    <ClInclude Include="dependencies\classes\autobaseptr.h" />
+    <ClInclude Include="dependencies\classes\bitbuf.h" />
+    <ClInclude Include="dependencies\classes\bspflags.h" />
+    <ClInclude Include="dependencies\classes\classvalues.h" />
+    <ClInclude Include="dependencies\classes\clipraytrace.h" />
+    <ClInclude Include="dependencies\classes\color.h" />
+    <ClInclude Include="dependencies\classes\crc32.h" />
+    <ClInclude Include="dependencies\classes\definitions.h" />
+    <ClInclude Include="dependencies\classes\fnva.h" />
+    <ClInclude Include="dependencies\classes\inputsys.h" />
+    <ClInclude Include="dependencies\classes\matrix.h" />
+    <ClInclude Include="dependencies\classes\pe32.h" />
+    <ClInclude Include="dependencies\classes\stack.h" />
+    <ClInclude Include="dependencies\classes\studio.h" />
+    <ClInclude Include="dependencies\classes\usercmd.h" />
+    <ClInclude Include="dependencies\classes\datamap.h" />
+    <ClInclude Include="dependencies\classes\datatable.h" />
+    <ClInclude Include="dependencies\classes\utlmemory.h" />
+    <ClInclude Include="dependencies\classes\utlstack.h" />
+    <ClInclude Include="dependencies\classes\utlvector.h" />
+    <ClInclude Include="dependencies\classes\vector.h" />
+    <ClInclude Include="dependencies\curl\curl.h" />
+    <ClInclude Include="dependencies\curl\curlver.h" />
+    <ClInclude Include="dependencies\curl\easy.h" />
+    <ClInclude Include="dependencies\curl\hwid\hwid.h" />
+    <ClInclude Include="dependencies\curl\hwid\md5.h" />
+    <ClInclude Include="dependencies\curl\mprintf.h" />
+    <ClInclude Include="dependencies\curl\multi.h" />
+    <ClInclude Include="dependencies\curl\options.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\allocators.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\document.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\encodedstream.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\encodings.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\error\en.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\error\error.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\filereadstream.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\filewritestream.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\fwd.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\itoa.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\meta.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\pow10.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\regex.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\stack.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\strtod.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\internal\swap.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\memorybuffer.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\memorystream.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\pointer.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\prettywriter.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\rapidjson.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\reader.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\schema.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\stream.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\stringbuffer.h" />
+    <ClInclude Include="dependencies\curl\rapidjson\writer.h" />
+    <ClInclude Include="dependencies\curl\stdcheaders.h" />
+    <ClInclude Include="dependencies\curl\system.h" />
+    <ClInclude Include="dependencies\curl\typecheck-gcc.h" />
+    <ClInclude Include="dependencies\curl\urlapi.h" />
+    <ClInclude Include="dependencies\fonts\menufonts.h" />
+    <ClInclude Include="dependencies\fonts\smallestpixel.h" />
+    <ClInclude Include="dependencies\fonts\weaponicons.h" />
+    <ClInclude Include="dependencies\hooklibs\detour.h" />
+    <ClInclude Include="dependencies\imgui\backends\imgui_impl_dx9.h" />
+    <ClInclude Include="dependencies\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="dependencies\imgui\imconfig.h" />
+    <ClInclude Include="dependencies\imgui\imgui.h" />
+    <ClInclude Include="dependencies\imgui\imgui_freetype.h" />
+    <ClInclude Include="dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="dependencies\mh\buffer.h" />
+    <ClInclude Include="dependencies\mh\hde\hde32.h" />
+    <ClInclude Include="dependencies\mh\hde\hde64.h" />
+    <ClInclude Include="dependencies\mh\hde\pstdint.h" />
+    <ClInclude Include="dependencies\mh\hde\table32.h" />
+    <ClInclude Include="dependencies\mh\hde\table64.h" />
+    <ClInclude Include="dependencies\mh\MinHook.h" />
+    <ClInclude Include="dependencies\mh\trampoline.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="main\dll.h" />
+    <ClInclude Include="main\features\antiaim.h" />
+    <ClInclude Include="main\features\autowall.h" />
+    <ClInclude Include="main\features\chams.h" />
+    <ClInclude Include="main\features\misc.h" />
+    <ClInclude Include="main\features\nadepred.h" />
+    <ClInclude Include="main\features\nadewarning.h" />
+    <ClInclude Include="main\features\prediction.h" />
+    <ClInclude Include="main\features\ragebot.h" />
+    <ClInclude Include="main\features\skins\skins.h" />
+    <ClInclude Include="main\features\visuals.h" />
+    <ClInclude Include="main\gvars.h" />
+    <ClInclude Include="main\handlers\animationsmanager.h" />
+    <ClInclude Include="main\handlers\convarmanager.h" />
+    <ClInclude Include="main\handlers\entityhandler.h" />
+    <ClInclude Include="main\handlers\eventlogger.h" />
+    <ClInclude Include="main\handlers\eventmanager.h" />
+    <ClInclude Include="main\handlers\firebulletmanager.h" />
+    <ClInclude Include="main\handlers\cmdmgr.h" />
+    <ClInclude Include="main\handlers\localanimmanager.h" />
+    <ClInclude Include="main\handlers\localengine.h" />
+    <ClInclude Include="main\handlers\netvarmanager.h" />
+    <ClInclude Include="main\handlers\packethandler.h" />
+    <ClInclude Include="main\hooks.h" />
+    <ClInclude Include="main\interfaces.h" />
+    <ClInclude Include="main\interfaces\ibaseclient.h" />
+    <ClInclude Include="main\interfaces\icliententitylist.h" />
+    <ClInclude Include="main\interfaces\iclientmodeshared.h" />
+    <ClInclude Include="main\interfaces\iengine.h" />
+    <ClInclude Include="main\interfaces\ienginetrace.h" />
+    <ClInclude Include="main\interfaces\ieventgamemanager.h" />
+    <ClInclude Include="main\interfaces\ifilesystem.h" />
+    <ClInclude Include="main\interfaces\igameproxyrules.h" />
+    <ClInclude Include="main\interfaces\igametypes.h" />
+    <ClInclude Include="main\interfaces\iglowobject.h" />
+    <ClInclude Include="main\interfaces\iinput.h" />
+    <ClInclude Include="main\interfaces\iinputsystem.h" />
+    <ClInclude Include="main\interfaces\ikeyvalues.h" />
+    <ClInclude Include="main\interfaces\ilocalize.h" />
+    <ClInclude Include="main\interfaces\imaterialsystem.h" />
+    <ClInclude Include="main\interfaces\imdlcache.h" />
+    <ClInclude Include="main\interfaces\imemalloc.h" />
+    <ClInclude Include="main\interfaces\imodelrender.h" />
+    <ClInclude Include="main\interfaces\inetchannel.h" />
+    <ClInclude Include="main\interfaces\inetworkstringtable.h" />
+    <ClInclude Include="main\interfaces\iphysicssurfaceprops.h" />
+    <ClInclude Include="main\interfaces\iprediction.h" />
+    <ClInclude Include="main\interfaces\isteamclienth.h" />
+    <ClInclude Include="main\interfaces\isteamcoordinator.h" />
+    <ClInclude Include="main\interfaces\isurface.h" />
+    <ClInclude Include="main\interfaces\ivconvar.h" />
+    <ClInclude Include="main\interfaces\ivdebugoverlay.h" />
+    <ClInclude Include="main\interfaces\ivglobalvars.h" />
+    <ClInclude Include="main\interfaces\ivmodelinfo.h" />
+    <ClInclude Include="main\interfaces\ivpanel.h" />
+    <ClInclude Include="main\interfaces\iweaponsystem.h" />
+    <ClInclude Include="main\interfaces\surfacerender.h" />
+    <ClInclude Include="main\math.h" />
+    <ClInclude Include="main\renderer.h" />
+    <ClInclude Include="main\sdk.h" />
+    <ClInclude Include="main\sdk\animation.h" />
+    <ClInclude Include="main\sdk\baseentity.h" />
+    <ClInclude Include="main\sdk\bonesetuprebuilt.h" />
+    <ClInclude Include="main\sdk\cbonesetup.h" />
+    <ClInclude Include="main\sdk\ikcontext.h" />
+    <ClInclude Include="main\ui\ui.h" />
+    <ClInclude Include="main\ui\vars.h" />
+    <ClInclude Include="others\util.h" />
+    <ClInclude Include="others\wapi.h" />
+    <ClInclude Include="selfprotect\strencrypt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\curl\libcurl_a.lib" />
+    <Library Include="dependencies\freetype\win32\freetype.lib" />
+    <Library Include="dependencies\freetype\win32\freetype_debug.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c4b96c4e-5f07-4888-af66-5c5f88e772b0}</ProjectGuid>
+    <RootNamespace>csgo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>base</TargetName>
+    <ExternalIncludePath>$(DXSDK_DIR)Include;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Dev\csgo\dependencies\freetype\include</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;C:\Dev\csgo;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>base</TargetName>
+    <ExternalIncludePath>$(DXSDK_DIR)Include;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExternalIncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;CSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CSGO_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
